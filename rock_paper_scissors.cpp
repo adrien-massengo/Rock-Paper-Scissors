@@ -5,11 +5,36 @@
 #include <time.h>
 #include <cstdlib>
 #include <ctype.h>
-#include <iostream>
 #include<bits/stdc++.h>
-#include <iostream>
 
 using namespace std;
+int gameExit();
+void breakline(int line_num);
+void setTextColor(int color, string text);
+void printTitle();
+void printRules();
+void  game();
+
+int main(){
+	srand(time(NULL));
+	string again;
+	printTitle();
+	breakline(1);
+	printRules();
+	breakline(1);
+	string play;
+	cout << "Play?\n";
+	cout << "y/n\n";
+	getline(cin, play);
+	transform(play.begin(), play.end(), play.begin(), ::tolower);
+	if (play == "y")
+	{
+		game();
+	}
+	else
+	return 0;
+
+}
 int gameExit()
 {
 	return 0;
@@ -61,6 +86,7 @@ void printRules()
 	cout << "        \\/                \\/     \\/ " << endl;
 	SetConsoleTextAttribute(hConsole, 7);
 	cout << "----------------------------------------" << endl;
+	cout << "1. Pick one of either rock, paper or scissors\n 2. So does the computer\n 3. rock beats scissors, scissors beats paper, paper beats rock\n4. Whoever wins, wins"
 }
 void  game()
 {
@@ -117,25 +143,5 @@ void  game()
 	}
 	else
 	gameExit();
-
-}
-
-int main(){
-	srand(time(NULL));
-	string again;
-	printTitle();
-	breakline(1);
-	printRules();
-	breakline(1);
-	string play;
-	cout << "Play?\n";
-	cout << "y/n\n";
-	getline(cin, play);
-	transform(play.begin(), play.end(), play.begin(), ::tolower);
-	if (play == "y"){
-		game();
-	}
-	else
-	return 0;
 
 }
