@@ -86,7 +86,7 @@ void printRules()
 	cout << "        \\/                \\/     \\/ " << endl;
 	SetConsoleTextAttribute(hConsole, 7);
 	cout << "----------------------------------------" << endl;
-	cout << "1. Pick one of either rock, paper or scissors\n 2. So does the computer\n 3. rock beats scissors, scissors beats paper, paper beats rock\n4. Whoever wins, wins"
+	cout << "1. Pick one of either rock, paper or scissors\n 2. So does the computer\n 3. rock beats scissors, scissors beats paper, paper beats rock\n4. Whoever wins, wins";
 }
 void  game()
 {
