@@ -1,0 +1,6 @@
+﻿  player.cpp
+  Rock  Paper Scissors.cpp
+C:\Users\Massengo Adrien\Documents\GitHub\Rock-Paper-Scissors\Rock  Paper Scissors\Rock  Paper Scissors.cpp(19,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  setTextColor.cpp
+  Generating Code...
+  Rock  Paper Scissors.vcxproj -> C:\Users\Massengo Adrien\Documents\GitHub\Rock-Paper-Scissors\Rock  Paper Scissors\x64\Debug\Rock  Paper Scissors.exe
